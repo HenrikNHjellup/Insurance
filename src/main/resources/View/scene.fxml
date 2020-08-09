@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Programutvikling.Controller.FXMLController">
+  <children> <!-- pageButton #gotoPage -->
+    <Button fx:id="createAccidentReport" layoutX="120.0" layoutY="50.0" onAction="#createAccidentReport" text="Registrer ny skademelding" />
+    <Button fx:id="showAllCustomersButton" layoutX="120.0" layoutY="125.0" onAction="#showAllCustomers" text="Vis alle kunder" />
+    <Button fx:id="createInsuranceButton" layoutX="120.0" layoutY="200.0" onAction="#createInsurance" text="Registrer ny forsikring" />
+    <Button fx:id="showAllInsurancesButton" layoutX="120.0" layoutY="275.0" onAction="#showAllInsurances" text="Vis alle forsikringer" />
+    <Button fx:id="createCustomerButton" layoutX="120.0" layoutY="350.0" onAction="#createCustomer" text="Registrer ny kunde" />
+    <Button fx:id="exportFileButton" layoutX="120.0" layoutY="425.0" onAction="#exportFile" text="Eksporter fil" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="500.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+  </children>
+</AnchorPane>

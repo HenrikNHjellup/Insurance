@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="775.0"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Programutvikling.Controller.customerInformationController">
+    <children>
+        <Label layoutX="32.0" layoutY="14.0" prefHeight="34.0" prefWidth="100.0" text="KundeID: ">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblCustomerID" layoutX="160.0" layoutY="14.0" prefHeight="34.0" prefWidth="130.0" text="kundeID">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblFirstname" layoutX="32.0" layoutY="71.0" prefHeight="21.0" prefWidth="115.0" text="Fornavn ">
+            <font>
+                <Font name="System Italic" size="17.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblLastname" layoutX="156.0" layoutY="71.0" prefHeight="21.0" prefWidth="160.0" text="Etternavn">
+            <font>
+                <Font name="System Italic" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="109.0" text="Tlf. nr: " />
+        <Label layoutX="32.0" layoutY="138.0" text="E-post:" />
+        <Label layoutX="52.0" layoutY="50.0" prefHeight="21.0" prefWidth="78.0" text="Kunde siden :">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDate" layoutX="141.0" layoutY="52.0" prefHeight="17.0" prefWidth="86.0" text="mydate">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="167.0" text="Fakturaadresse:" />
+        <Label fx:id="lblphoneNr" layoutX="126.0" layoutY="109.0" text="Label" />
+        <Label fx:id="lblEmail" layoutX="127.0" layoutY="138.0" text="Label" />
+        <Label fx:id="lblAdress" layoutX="57.0" layoutY="188.0" prefHeight="21.0" prefWidth="86.0" text="Adresselinje" />
+        <Label fx:id="lblPostCodeCity" layoutX="57.0" layoutY="209.0" prefHeight="21.0" prefWidth="86.0" text="Postnr Sted" />
+        <Label layoutX="28.0" layoutY="244.0" text="Sum ubetalt kompensasjon:" />
+        <Label fx:id="lblSumUnpaid" layoutX="29.0" layoutY="272.0" text="2000">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblVwInsrnc" layoutX="283.0" layoutY="78.0" prefHeight="200.0" prefWidth="454.0">
+            <columns>
+                <TableColumn fx:id="tblColInsrncId" prefWidth="77.0" text="ID" />
+                <TableColumn fx:id="tblColinsType" prefWidth="66.0" text="Type" />
+                <TableColumn fx:id="tblColValue" prefWidth="81.0" text="Verdi" />
+                <TableColumn fx:id="tblColAmount" minWidth="0.0" prefWidth="109.0" text="Årlig premie" />
+                <TableColumn fx:id="tblColInsMyDate" prefWidth="120.0" text="Opprettet dato" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tblVwAccRep" layoutX="29.0" layoutY="409.0" prefHeight="129.0" prefWidth="717.0">
+            <columns>
+                <TableColumn fx:id="tblColAccidentNumber" prefWidth="77.0" text="ID" />
+                <TableColumn fx:id="tblColaccidentType" prefWidth="66.0" text="Type" />
+                <TableColumn fx:id="tblColvaluationAmount" prefWidth="100.0" text="Takseringssum" />
+                <TableColumn fx:id="tblColpaidCompansationAmount" minWidth="0.0" prefWidth="109.0" text="Utbetalt beløp" />
+                <TableColumn fx:id="tblColaccidentDate" prefWidth="101.0" text="Skadedato" />
+                <TableColumn fx:id="tblColaccidentDescription" prefWidth="263.0" text="Beskrivelse" />
+            </columns>
+        </TableView>
+        <Label layoutX="29.0" layoutY="381.0" text="Skademeldinger" />
+        <Label layoutX="283.0" layoutY="50.0" text="Kundens forsikringer" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Programutvikling.Controller.createCustomerController">
+   <children>
+      <Label layoutX="260.0" layoutY="42.0" text="Opprett kunde" />
+      <TextField fx:id="firstNameField" layoutX="111.0" layoutY="120.0" />
+      <TextField fx:id="lastNameField" layoutX="339.0" layoutY="120.0" />
+      <TextField fx:id="phoneNumberField" layoutX="111.0" layoutY="180.0" />
+      <TextField fx:id="billingAdressField" layoutX="113.0" layoutY="240.0" />
+      <TextField fx:id="emailField" layoutX="339.0" layoutY="180.0" />
+      <TextField fx:id="postcodeField" layoutX="339.0" layoutY="240.0" />
+      <TextField fx:id="cityField" layoutX="113.0" layoutY="300.0" />
+      <TextField fx:id="comment" layoutX="341.0" layoutY="300.0" />
+      <Label layoutX="163.0" layoutY="102.0" text="Fornavn" />
+      <Label layoutX="388.0" layoutY="102.0" text="Etternavn" />
+      <Label layoutX="142.0" layoutY="162.0" text="Telefonnummer" />
+      <Label layoutX="144.0" layoutY="222.0" text="Fakturaadresse" />
+      <Label layoutX="376.0" layoutY="162.0" text="Epost-adresse" />
+      <Label layoutX="388.0" layoutY="222.0" text="Postkode" />
+      <Label layoutX="161.0" layoutY="282.0" text="Poststed" />
+      <Label layoutX="381.0" layoutY="282.0" text="Kommentar" />
+      <Button fx:id="createCustomerButton" layoutX="381.0" layoutY="344.0" mnemonicParsing="false" onAction="#createCustomer" text="Legg til" />
+      <Button fx:id="cancelButton" layoutX="158.0" layoutY="344.0" mnemonicParsing="false" onAction="#cancelButton" text="Avbryt" />
+   </children>
+</AnchorPane>
